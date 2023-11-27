@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --text-light: #f0f0f0;
+    
+}
