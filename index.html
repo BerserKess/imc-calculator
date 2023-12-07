@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Document</title>
+    <title>. :  Calculadora IMC : .</title>
 </head>
 <body>
+    <header class="head-container">
+        <h1 class="head-title">Calculadora de IMC</h1>
+
+    </header>
+    <div class="form-container">
+        <div class="forms">
+            <label for="weight">Informe seu peso</label>
+            <input type="text" name="weight" id="weight" required placeholder="quilos">
+            <label for="height">Informe sua altura</label>
+            <input type="text" name="height" id="height" required placeholder="Centimétros">
+            <button id="calculate-imc">Calcular</button>
+            <div id="result"></div>
+
+        </div>
+    </div>
     <script src="./JS/index.js"></script>
 </body>
 </html>
