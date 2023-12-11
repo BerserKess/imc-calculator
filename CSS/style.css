@@ -7,11 +7,15 @@
 :root{
     --text-light: #f0f0f0;
     --dark-color: #1A1B26;
+    --title-font: 'Shizuru';
+    --text-font: 'Poppins'
     
 }
 
 .head-title{
+    font-family: var(--title-font);
     text-align: center;
+    color: var(--text-light);
 }
 
 body{
@@ -27,7 +31,9 @@ body{
     max-width: 300px;
     height: 400px;
     padding: 10px;
-    border: 1px solid red;
+    border: 1px solid rgb(8, 8, 8);
+    border-radius: 10px;
+    background-color: rgba(8, 8, 8, 0.493)
 }
 
 .forms{
@@ -37,24 +43,45 @@ body{
     margin-top: 20px;
     padding: 10px;
     gap: 10px;
-    /* border: 1px solid red; */
 }
 
 label{
     color: var(--text-light);
     font-size: 1rem;
+    font-family: var(--text-font);
 }
 
 input{
     width: 200px;
     border-radius: 6px;
+    text-align: center;
+    font-family: var(--text-font);
+}
+input:focus, input:active{
+    outline: 0;
 }
 
 button{
     padding: 5px;
+    width: 100px;
     background-color: transparent;
     color: var(--text-light);
     border-radius: 6px;
     margin-top: 20px;
     cursor: pointer;
+    font-family: var(--text-font);
+    
+}
+
+button:hover{
+    background-color: rgb(216, 13, 13);
+    transition: 0.5s;
+}
+
+#result{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    font-family: var(--text-font);
 }
